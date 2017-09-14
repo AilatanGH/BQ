@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+.container {
+  width: 75%;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+/* TIPOGRAPHY */
+
+.roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+.page-header {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.2em;
+}
+
+.title-page {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2em;
+}
+
+.title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2em;
+}
+
+.subtitle {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+}
+
+.code {
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.box-code {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #fafae2;
+  border-radius: 5px;
+}
