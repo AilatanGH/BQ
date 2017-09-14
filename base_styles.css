@@ -96,3 +96,44 @@ body {
 }
 
 /* IMAGES */
+
+
+/* NAVIGATION */
+
+.nav-tabs {
+  width: 100%;
+  height: 40px;
+  background-color: black;
+  margin-bottom: 50px;
+}
+
+.nav-tabs ul {
+  padding: 0;
+  margin: 0;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.tabs a {
+  text-decoration: none;
+  color: white;
+}
+
+.tabs a:hover {
+  color: #666;
+}
+
+/* LISTS */
+
+.box-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.options {
+  text-decoration: none;
+  color: black;
+}
