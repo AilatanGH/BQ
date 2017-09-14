@@ -54,3 +54,45 @@ body {
   background-color: #fafae2;
   border-radius: 5px;
 }
+
+/* COLORS */
+
+.container-colors {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.box-colors {
+  width: 200px;
+  height: 70px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.color-1 {
+  background-color: red;
+}
+
+.color-2 {
+  background-color: yellow;
+}
+
+.color-3 {
+  background-color: green;
+}
+
+.color-4 {
+  background-color: blue;
+}
+
+.name-color {
+  font-size: 1em;
+  font-weight: 200;
+  margin: 25px;
+  text-align: center;
+  color: white;
+}
+
+/* IMAGES */
