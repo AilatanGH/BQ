@@ -137,3 +137,57 @@ body {
   text-decoration: none;
   color: black;
 }
+
+/* FORM */
+
+.text-form {
+  text-align: center;
+}
+
+.list-form {
+  width: 300px;
+  text-align: end;
+}
+
+.list-form ul {
+  text-align: center;
+  padding: 0;
+  list-style: none;
+}
+
+.input {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  padding: 0;
+  border-style: groove;
+  border: 1px solid #666;
+  padding-left: 10px;
+  margin-bottom: 15px;
+}
+
+.input::placeholder {
+  color: #a9a9be;
+  font-size: 1.3em;
+  font-weight: 200;
+}
+
+
+/* BUTTONS */
+
+.btn {
+  width: 80px;
+  height: 40px;
+  font-size: 1em;
+  font-weight: 200;
+  cursor: pointer;
+  border-radius: 5px;
+  border-style: hidden;
+  background-color: black;
+  color: white;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #666;
+}
