@@ -38,6 +38,8 @@ a {
 .title {
   font-family: 'Roboto', sans-serif;
   font-size: 1.2em;
+  margin-top: 40px;
+  margin-bottom: 5px;
 }
 
 .subtitle {
@@ -46,13 +48,15 @@ a {
 }
 
 .box-code {
-  width: 100%;
   padding: 10px;
-  margin-bottom: 10px;
-  background-color: #fafae2;
+  margin-bottom: 20px;
+  background-color: #f3f3f3;
   border-radius: 5px;
 }
 
+code {
+  margin: 0 50px;
+}
 /* COLORS */
 
 .container-colors {
@@ -100,6 +104,7 @@ a {
 .dark {
   color: #333333;
 }
+
 /* IMAGES */
 
 
