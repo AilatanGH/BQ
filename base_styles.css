@@ -45,12 +45,6 @@ a {
   font-size: 1em;
 }
 
-.code {
-  width: 60%;
-  margin: 0 auto;
-  margin-bottom: 50px;
-}
-
 .box-code {
   width: 100%;
   padding: 10px;
@@ -70,25 +64,29 @@ a {
 
 .box-colors {
   width: 200px;
-  height: 70px;
+  height: 100px;
   margin-bottom: 20px;
   border-radius: 5px;
 }
 
 .color-1 {
-  background-color: red;
+  background-color: #333333;
 }
 
 .color-2 {
-  background-color: yellow;
+  background-color: #666666;
 }
 
 .color-3 {
-  background-color: green;
+  background-color: #77756f;
 }
 
 .color-4 {
-  background-color: blue;
+  background-color: #999999;
+}
+
+.color-5 {
+  background-color: #f3f3f3;
 }
 
 .name-color {
@@ -99,6 +97,9 @@ a {
   color: white;
 }
 
+.dark {
+  color: #333333;
+}
 /* IMAGES */
 
 

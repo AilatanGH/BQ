@@ -10,10 +10,14 @@
   <meta name=”description” content="guía de estilo para maquetación de páginas web y poder reutilizar componentes">
   <meta name=”keywords” content="guía de estilo, tipografía, colores">
 </head>
+
 <body>
   <div class="container">
     <h1 class="page-header">Guía de Estilos</h1>
+
+    <!-- Tipografía -->
     <h2 class="title-page">Tipografía</h2>
+
     <h3 class="title">Roboto</h3>
     <p class="roboto">
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -22,56 +26,99 @@
     <p>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </p>
-    <div class="code">
+
+    <code>
       <div class="box-code">
-        <p>HTML:</p>
-        <p>
-          < link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Roboto:300,400,500,700" rel="stylesheet" >
-        </p>
+        <strong>HTML:</strong>
+        </br>
+        <xmp>
+          <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Roboto:300,400,500,700" rel="stylesheet">
+        </xmp>
       </div>
 
       <div class="box-code">
-        <p>CSS:</p>
-        <p>
+        <strong>CSS:</strong>
+        </br>
+        <xmp>
           Variable: #hay que crearla;</br>
           Variable: #hay que crearla;
-        </p>
+        </xmp>
       </div>
-    </div>
+    </code>
 
-    <div>
-      <h3 class="subtitle">< h1 ></h3>
-        <h1>Lorem Ipsum</h1>
-      <h3 class="subtitle">< h2 ></h3>
-        <h2>Lorem Ipsum</h2>
-      <h3 class="subtitle">< h3 ></h3>
-        <h3>Lorem Ipsum</h3>
-      <h3 class="subtitle">< h4 ></h3>
-        <h4>Lorem Ipsum</h4>
-      <h3 class="subtitle">< p ></h3>
+    <h1>Lorem Ipsum</h1>
+    <code>
+      <div class="box-code">
+        <strong>HTML:</strong>
+        </br>
+        <xmp>
+          <h1>Lorem Ipsum</h1>
+        </xmp>
+      </div>
+    </code>
+
+    <h2>Lorem Ipsum</h2>
+    <code>
+      <div class="box-code">
+        <strong>HTML:</strong>
+        </br>
+        <xmp>
+          <h2>Lorem Ipsum</h2>
+        </xmp>
+      </div>
+    </code>
+
+    <h3>Lorem Ipsum</h3>
+    <code>
+      <div class="box-code">
+        <strong>HTML:</strong>
+        </br>
+        <xmp>
+          <h3>Lorem Ipsum</h3>
+        </xmp>
+      </div>
+    </code>
+
+    <h4>Lorem Ipsum</h4>
+    <code>
+      <div class="box-code">
+        <strong>HTML:</strong>
+        </br>
+        <xmp>
+          <h4>Lorem Ipsum</h4>
+        </xmp>
+      </div>
+    </code>
+
+    <h3 class="subtitle">< p ></h3>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
     </div>
-  </div>
+
+  </div>   <!-- End Tipografía -->
+  <!-- Colores -->
   <div class="container">
     <h1 class="page-header">COLORES</h1>
     <div class="container-colors">
       <div class="box-colors color-1">
-        <p class="name-color">#d46f3</p>
+        <p class="name-color"><b> darkslategray </b></br> #333333 </br> rgb(51,51,51) </p>
       </div>
       <div class="box-colors color-2">
-        <p class="name-color">#d46f3</p>
+        <p class="name-color"><b> dimgray </b></br> #666666 </br> rgb(102,102,102) </p>
       </div>
       <div class="box-colors color-3">
-        <p class="name-color">#d46f3</p>
+        <p class="name-color"><b> dimgray </b></br> #77756f </br> rgb(119,117,111) </p>
       </div>
       <div class="box-colors color-4">
-        <p class="name-color">#d46f3</p>
+        <p class="name-color"><b> darkgray </b></br> #999999 </br> rgb(153,153,153) </p>
+      </div>
+      <div class="box-colors color-5">
+        <p class="name-color dark"><b> whitesmoke </b></br> #f3f3f3 </br> rgb(243,243,243) </p>
       </div>
     </div>
-  </div>
-
+  </div>   <!-- En Colores -->
+  <!-- Imágenes -->
   <div class="container">
     <h1 class="page-header">IMÁGENES</h1>
     <div class="box-images">
@@ -79,10 +126,11 @@
       <img src="" class="img-medium" alt="">
       <img src="" class="img-largue" alt="">
     </div>
-  </div>
-
+  </div>   <!-- End Imágenes-->
+  <!-- Componentes -->
   <div class="container">
     <h1 class="page-header">COMPONENTES</h1>
+    <!-- Menú Naveganción -->
     <h2 class="title">Menú navegación</h2>
     <nav class="nav-tabs">
       <ul>
@@ -92,7 +140,7 @@
         <li class="tabs"><a href="#">item 4</a></li>
       </ul>
     </nav>
-
+    <!-- Listas -->
     <h2 class="title">Listas</h2>
     <div class="box-list">
       <div>
@@ -114,7 +162,7 @@
         </ol>
       </div>
     </div>
-
+    <!-- Formularios -->
     <h2 class="title">Formulario</h2>
     <form action="index.html" method="post">
       <div class="list-form">
@@ -124,8 +172,7 @@
         <button class="btn">Send</button>
       </div>
     </form>
-
-
+    <!-- Footer -->
     <footer class="footer" role="navigation">
       <h2 class="title">Footer</h2>
       <div class="nav-footer">
@@ -159,7 +206,7 @@
       </div>
     </footer>
 
-  </div>
+  </div> <!-- End Componentes -->
 
 </body>
 </html>
