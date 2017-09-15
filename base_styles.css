@@ -4,6 +4,8 @@
 
 body {
   font-family: 'Lato', sans-serif;
+  color: #77756f;
+  font-weight: 300;
   margin: 0;
   padding: 0;
   min-height: 100vh;
@@ -11,6 +13,18 @@ body {
 
 a {
   text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Roboto', sans-serif;
+}
+
+h3,
+h4 {
+  font-weight: 400;
 }
 
 .container {
@@ -57,6 +71,7 @@ a {
 code {
   margin: 0 50px;
 }
+
 /* COLORS */
 
 .container-colors {
@@ -69,7 +84,7 @@ code {
 .box-colors {
   width: 200px;
   height: 100px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   border-radius: 5px;
 }
 
@@ -113,7 +128,7 @@ code {
 .nav-tabs {
   width: 100%;
   height: 40px;
-  background-color: black;
+  background-color: #333333;
   margin-bottom: 50px;
 }
 
@@ -131,7 +146,7 @@ code {
 }
 
 .tabs a:hover {
-  color: #666;
+  color: #666666;
 }
 
 /* LISTS */
@@ -170,13 +185,13 @@ code {
   border-radius: 5px;
   padding: 0;
   border-style: groove;
-  border: 1px solid #666;
+  border: 1px solid #666666;
   padding-left: 10px;
   margin-bottom: 15px;
 }
 
 .input::placeholder {
-  color: #a9a9be;
+  color: #999999;
   font-size: 1.3em;
   font-weight: 200;
 }
@@ -192,13 +207,13 @@ code {
   cursor: pointer;
   border-radius: 5px;
   border-style: hidden;
-  background-color: black;
+  background-color: #333333;
   color: white;
   transition: 0.3s;
 }
 
 .btn:hover {
-  background-color: #666;
+  background-color: #77756f;
 }
 
 
@@ -208,7 +223,7 @@ code {
   width: 100%;
   height: 100%;
   padding: 20px;
-  background-color: black;
+  background-color: #333333;
   color: white;
   text-align: center;
 }
@@ -221,4 +236,5 @@ code {
 
 .nav-heading {
   color: white;
+  font-weight: 300;
 }
