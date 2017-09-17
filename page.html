@@ -1,32 +1,133 @@
 <!DOCTYPE html>
 <html>
-<<<<<<< HEAD
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-  <link href="stylesheet/css/page.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Roboto:300,400,500,700" rel="stylesheet">
-  <title>Productos educativos | BQ </title>
-  <meta name=”description” content="página web de venta, información y productos para la educación de BQ">
-  <meta name=”keywords” content="educación, productos educativos, robótica, BQ">
-</head>
-<body>
-
-</body>
-=======
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <link href="base_styles.css" rel="stylesheet">
+    <link href="stylesheet/css/page.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Roboto:300,400,500,700" rel="stylesheet">
-    <title>Guía de estilos | BQ </title>
+    <title>BQ educación | BQ </title>
     <meta name=”description” content="guía de estilo para maquetación de páginas web y poder reutilizar componentes">
     <meta name=”keywords” content="guía de estilo, tipografía, colores">
   </head>
   <body>
+    <div class="container">
+      <!-- Header -->
+      <header class="header">
+        <div class="logo">
+          <h2>Logo</h2>
+        </div>
+        <nav class="nav-tabs">
+          <ul>
+            <li class="tabs"><a href="#">item 1</a></li>
+            <li class="tabs"><a href="#">item 2</a></li>
+            <li class="tabs"><a href="#">item 3</a></li>
+            <li class="tabs"><a href="#">item 4</a></li>
+          </ul>
+        </nav>
+      </header> <!--End Header -->
 
+      <!-- Sidebar -->
+      <section class="sidebar">
+        <h3>Categories</h3>
+        <div class="nav-categories">
+          <ul class="nav-small">
+            <li><a id="btn-subnav" class="nav-small-link" href="#">
+                item 1
+                <img id="subnav-img" class="subnav-img" src="images/icon-expand.png" alt="Icono abrir">
+              </a>
+            </li>
+            <li><a id="btn-subnav" class="nav-small-link" href="#">
+                item 2
+                <img id="subnav-img" class="subnav-img" src="images/icon-expand.png" alt="Icono abrir">
+              </a>
+                <ul id="subnav" class="subnav subnav-show">
+                  <li><a href="">Item 1</a></li>
+                  <li><a href="">Item 2</a></li>
+                  <li><a href="">Item 3</a></li>
+                </ul>
+            </li>
+            <li><a id="btn-subnav" class="nav-small-link" href="#">
+                item 3
+                <img id="subnav-img" class="subnav-img" src="images/icon-expand.png" alt="Icono abrir">
+              </a>
+            </li>
+            <li><a id="btn-subnav" class="nav-small-link" href="#">
+                item 4
+                <img id="subnav-img" class="subnav-img" src="images/icon-expand.png" alt="Icono abrir">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section><!-- End Sidebar -->
+
+      <!-- Catalogue-->
+      <section class="column catalogue">
+        <h2>Catalogue</h2>
+        <div class="row">
+          <img class="img-small" src="" alt="">
+          <img class="img-small" src="" alt="">
+          <img class="img-small" src="" alt="">
+          <img class="img-small" src="" alt="">
+        </div>
+      </section>  <!-- End Catalogue-->
+
+      <!-- Content-->
+      <section class="column content">
+        <h2>Feature Product</h2>
+        <div>
+          <h3>lorem ipsum dolor</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+        <div class="row">
+          <img class="img-medium" src="" alt="">
+          <form method="post">
+            <div class="list-form">
+              <p class="text-form">Request Form</p>
+              <input class="input" type="text" placeholder="Name">
+              <input class="input" type="email" placeholder="email">
+              <button class="btn-dark">Send</button>
+            </div>
+          </form>
+        </div>
+      </section><!-- End Content-->
+
+      <!-- Footer -->
+      <footer class="footer">
+        <h2>Footer</h2>
+        <div class="row nav-footer">
+          <div>
+            <h3>Heading 1</h3>
+            <ul class="nav-heading">
+              <li><a class="link-heading" href="#">item 1</a></li>
+              <li><a class="link-heading" href="#">item 2</a></li>
+              <li><a class="link-heading" href="#">item 3</a></li>
+              <li><a class="link-heading" href="#">item 4</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Heading 2</h3>
+            <ol class="nav-heading">
+              <li><a class="link-heading" href="#">item 1</a></li>
+              <li><a class="link-heading" href="#">item 2</a></li>
+              <li><a class="link-heading" href="#">item 3</a></li>
+              <li><a class="link-heading" href="#">item 4</a></li>
+            </ol>
+          </div>
+          <div>
+            <h3>Heading 3</h3>
+            <ul class="nav-heading">
+              <li><a class="link-heading" href="#">item 1</a></li>
+              <li><a class="link-heading" href="#">item 2</a></li>
+              <li><a class="link-heading" href="#">item 3</a></li>
+              <li><a class="link-heading" href="#">item 4</a></li>
+            </ul>
+          </div>
+        </div>
+      </div><!-- End Footer -->
+
+    </footer>
   </body>
->>>>>>> created page.html and stylesheets
 </html>
