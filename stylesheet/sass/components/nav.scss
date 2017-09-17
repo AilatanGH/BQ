@@ -41,12 +41,15 @@
 }
 
 .nav-small-link {
-  color: white;
+  color: $color-white;
   display: flex;
   align-items: baseline;
   justify-content: space-between;
   width: 100%;
   padding: 10px 15px;
+  &:hover {
+    color: $color-terciary;
+  }
 }
 
 .subnav {
@@ -59,6 +62,9 @@
   }
   li a {
     color: $color-white;
+    &:hover {
+      color: $color-primary;
+    }
   }
 }
 

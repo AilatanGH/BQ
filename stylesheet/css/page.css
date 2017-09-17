@@ -21,6 +21,7 @@ body {
 .container {
   width: 100%;
   min-height: 100vh;
+  background-color: #f3f3f3;
   display: grid;
   grid-template-rows: 50px auto;
   grid-template-columns: 15% auto;
@@ -125,6 +126,8 @@ h4 {
   justify-content: space-between;
   width: 100%;
   padding: 10px 15px; }
+  .nav-small-link:hover {
+    color: #999999; }
 
 .subnav {
   padding: 5px 25px;
@@ -135,6 +138,8 @@ h4 {
     padding: 10px 0; }
   .subnav li a {
     color: white; }
+    .subnav li a:hover {
+      color: #666666; }
 
 .subnav-img {
   width: 20px;
