@@ -1,8 +1,9 @@
+@import "settings";
 @import "general";
 @import "tipography";
-@import "components/nav"
-        "components/sidebar"
-        "components/list"
-        "components/footer"
-        "components/buttons";
+@import "components/nav",
+        "components/form",
+        "components/footer",
+        "components/buttons",
+        "components/images";
 @import "layouts/product";

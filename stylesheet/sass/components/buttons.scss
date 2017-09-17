@@ -1,0 +1,17 @@
+/* BUTTONS */
+
+.btn-dark {
+  width: 80px;
+  height: 40px;
+  font-size: 1em;
+  font-weight: 200;
+  cursor: pointer;
+  border-radius: 5px;
+  border-style: hidden;
+  background-color: $color-dark;
+  color: $color-white;
+  transition: 0.3s;
+  &:hover {
+    background-color: $color-secondary;
+  }
+}

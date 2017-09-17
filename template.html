@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <link href="base_styles.css" rel="stylesheet">
+    <link href="stylesheet/css/page.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Roboto:300,400,500,700" rel="stylesheet">
     <title>Guía de estilos | BQ </title>
     <meta name=”description” content="guía de estilo para maquetación de páginas web y poder reutilizar componentes">
@@ -12,7 +13,7 @@
   </head>
 
   <body>
-    <div class="container">
+    <div class="container-template">
       <h1 class="page-header">Guía de Estilos</h1>
 
       <!-- Tipografía -->
@@ -40,8 +41,8 @@
           <div class="box-code">
             <strong>CSS:</strong>
             <p>
-              Variable: #hay que crearla;</br>
-              Variable: #hay que crearla;
+              Roboto: $font-title;</br>
+              Lato: $font-body;
             </p>
           </div>
         </code>
@@ -108,8 +109,9 @@
       </div>
 
     </div>   <!-- End Tipografía -->
+
     <!-- Colores -->
-    <div class="container">
+    <div class="container-template">
       <h2 class="page-header">COLORES</h2>
       <div class="container-colors">
         <div class="box-colors color-1">
@@ -143,18 +145,20 @@
           </code>
         </div>
       </div>
-    </div>   <!-- En Colores -->
+    </div>   <!-- End Colores -->
+
     <!-- Imágenes -->
-    <div class="container">
+    <div class="container-template">
       <h2 class="page-header">IMÁGENES</h2>
       <div class="box-images">
+        <img src="" class="img-xs" alt="">
         <img src="" class="img-small" alt="">
         <img src="" class="img-medium" alt="">
-        <img src="" class="img-largue" alt="">
       </div>
     </div>   <!-- End Imágenes-->
+
     <!-- Componentes -->
-    <div class="container">
+    <div class="container-template">
       <h2 class="page-header">COMPONENTES</h2>
       <!-- Menú Naveganción -->
       <h3 class="title">Menú navegación</h3>
@@ -181,7 +185,112 @@
             &lt;/nav>
           </pre>
         </div>
-      </code>
+      </code><!-- End Menú navegación-->
+
+      <!-- Menú Categorías -->
+      <h3 class="title">Menú Categorías</h3>
+      <hr/>
+      <div class="row">
+        <div class="box-categorie">
+          <h3>Menú Activo</h3>
+          <div class="nav-categories">
+            <ul class="nav-small">
+              <li><a id="btn-subnav" class="nav-small-link" href="#">
+                  item 1
+                  <img id="subnav-img" class="subnav-img" src="images/icon-expand.png" alt="Icono abrir">
+                </a>
+              </li>
+              <li><a id="btn-subnav" class="nav-small-link" href="#">
+                  item 2
+                  <img id="subnav-img" class="subnav-img" src="images/icon-expand.png" alt="Icono abrir">
+                </a>
+                  <ul id="subnav" class="subnav subnav-show">
+                    <li><a href="">Item 1</a></li>
+                    <li><a href="">Item 2</a></li>
+                    <li><a href="">Item 3</a></li>
+                  </ul>
+              </li>
+              <li><a id="btn-subnav" class="nav-small-link" href="#">
+                  item 3
+                  <img id="subnav-img" class="subnav-img" src="images/icon-expand.png" alt="Icono abrir">
+                </a>
+              </li>
+              <li><a id="btn-subnav" class="nav-small-link" href="#">
+                  item 4
+                  <img id="subnav-img" class="subnav-img" src="images/icon-expand.png" alt="Icono abrir">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="box-categorie">
+          <h3>Menú Desactivo</h3>
+          <div class="nav-categories">
+            <ul class="nav-small">
+              <li><a id="btn-subnav" class="nav-small-link" href="#">
+                  item 1
+                  <img id="subnav-img" class="subnav-img" src="images/icon-expand.png" alt="Icono abrir">
+                </a>
+              </li>
+              <li><a id="btn-subnav" class="nav-small-link" href="#">
+                  item 2
+                  <img id="subnav-img" class="subnav-img" src="images/icon-expand.png" alt="Icono abrir">
+                </a>
+              </li>
+              <li><a id="btn-subnav" class="nav-small-link" href="#">
+                  item 3
+                  <img id="subnav-img" class="subnav-img" src="images/icon-expand.png" alt="Icono abrir">
+                </a>
+              </li>
+              <li><a id="btn-subnav" class="nav-small-link" href="#">
+                  item 4
+                  <img id="subnav-img" class="subnav-img" src="images/icon-expand.png" alt="Icono abrir">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <code>
+        <div class="box-code">
+          <strong>HTML:</strong>
+          <pre>
+            &lt;section class="sidebar">
+              &lt;h3>Categories&lt;/h3>
+              &lt;div class="nav-categories">
+                &lt;ul class="nav-small">
+                  &lt;li>&lt;a id="btn-subnav" class="nav-small-link" href="#">
+                      item 1
+                      &lt;img id="subnav-img" class="subnav-img" src="images/icon-expand.png" alt="Icono abrir">
+                    &lt;/a>
+                  &lt;/li>
+                  &lt;li>&lt;a id="btn-subnav" class="nav-small-link" href="#">
+                      item 2
+                      &lt;img id="subnav-img" class="subnav-img" src="images/icon-expand.png" alt="Icono abrir">
+                    &lt;/a>
+                      &lt;ul id="subnav" class="subnav subnav-show">
+                        &lt;li>&lt;a href="">Item 1&lt;/a>&lt;/li>
+                        &lt;li>&lt;a href="">Item 2&lt;/a>&lt;/li>
+                        &lt;li>&lt;a href="">Item 3&lt;/a>&lt;/li>
+                      &lt;/ul>
+                  &lt;/li>
+                  &lt;li>&lt;a id="btn-subnav" class="nav-small-link" href="#">
+                      item 3
+                      &lt;img id="subnav-img" class="subnav-img" src="images/icon-expand.png" alt="Icono abrir">
+                    &lt;/a>
+                  &lt;/li>
+                  &lt;li>&lt;a id="btn-subnav" class="nav-small-link" href="#">
+                      item 4
+                      &lt;img id="subnav-img" class="subnav-img" src="images/icon-expand.png" alt="Icono abrir">
+                    &lt;/a>
+                  &lt;/li>
+                &lt;/ul>
+              &lt;/div>
+            &lt;/section><!-- End Sidebar -->
+          </pre>
+        </div>
+      </code><!-- End Menú Categorias-->
+
       <!-- Listas -->
       <h3 class="title">Listas</h3>
       <hr/>
@@ -239,17 +348,18 @@
             </pre>
           </div>
         </code>
-      </div>
+      </div><!-- End Listas -->
+
       <!-- Formularios -->
       <h3 class="title">Formulario</h3>
       <hr/>
       <div class="box-list">
-        <form action="index.html" method="post">
+        <form method="post">
           <div class="list-form">
             <p class="text-form">Request Form</p>
             <input class="input" type="text" placeholder="Name">
             <input class="input" type="email" placeholder="email">
-            <button class="btn">Send</button>
+            <button class="btn-dark">Send</button>
           </div>
         </form>
         <code>
@@ -267,42 +377,43 @@
             </pre>
           </div>
         </code>
-      </div>
+      </div><!-- End Formulario -->
+
       <!-- Footer -->
       <h3 class="title">Footer</h3>
       <hr/>
       <footer class="footer" role="navigation">
         <h2>Footer</h2>
-        <div class="nav-footer">
+        <div class="row nav-footer">
           <div>
             <h3>Heading 1</h3>
-            <ul>
-              <li><a class="nav-heading" href="#">item 1</a></li>
-              <li><a class="nav-heading" href="#">item 2</a></li>
-              <li><a class="nav-heading" href="#">item 3</a></li>
-              <li><a class="nav-heading" href="#">item 4</a></li>
+            <ul class="nav-heading">
+              <li><a class="link-heading" href="#">item 1</a></li>
+              <li><a class="link-heading" href="#">item 2</a></li>
+              <li><a class="link-heading" href="#">item 3</a></li>
+              <li><a class="link-heading" href="#">item 4</a></li>
             </ul>
           </div>
           <div>
             <h3>Heading 2</h3>
-            <ol>
-              <li><a class="nav-heading" href="#">item 1</a></li>
-              <li><a class="nav-heading" href="#">item 2</a></li>
-              <li><a class="nav-heading" href="#">item 3</a></li>
-              <li><a class="nav-heading" href="#">item 4</a></li>
+            <ol class="nav-heading">
+              <li><a class="link-heading" href="#">item 1</a></li>
+              <li><a class="link-heading" href="#">item 2</a></li>
+              <li><a class="link-heading" href="#">item 3</a></li>
+              <li><a class="link-heading" href="#">item 4</a></li>
             </ol>
           </div>
           <div>
             <h3>Heading 3</h3>
-            <ul>
-              <li><a class="nav-heading" href="#">item 1</a></li>
-              <li><a class="nav-heading" href="#">item 2</a></li>
-              <li><a class="nav-heading" href="#">item 3</a></li>
-              <li><a class="nav-heading" href="#">item 4</a></li>
+            <ul class="nav-heading">
+              <li><a class="link-heading" href="#">item 1</a></li>
+              <li><a class="link-heading" href="#">item 2</a></li>
+              <li><a class="link-heading" href="#">item 3</a></li>
+              <li><a class="link-heading" href="#">item 4</a></li>
             </ul>
           </div>
         </div>
-      </footer>
+      </footer><!-- Footer-->
 
     </div> <!-- End Componentes -->
 
