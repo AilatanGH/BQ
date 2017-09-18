@@ -24,9 +24,9 @@ body {
   background-color: #f3f3f3;
   display: grid;
   grid-template-rows: 50px auto;
-  grid-template-columns: 15% auto;
+  grid-template-columns: 100%;
   grid-gap: 1em;
-  grid-template-areas: "header header" "content content" "catalogue catalogue" "footer footer"; }
+  grid-template-areas: "header" "content" "catalogue" "footer"; }
 
 .row {
   width: 100%;
@@ -41,9 +41,12 @@ body {
 
 .header {
   width: 100%;
+  height: 60px;
   grid-area: header;
+  background-color: #333333;
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  justify-content: space-between; }
 
 .sidebar {
   display: none; }
@@ -90,6 +93,7 @@ h4 {
 .nav-tabs {
   width: 100%;
   height: 60px;
+  display: none;
   background-color: #333333;
   margin-bottom: 50px; }
   .nav-tabs ul {
@@ -104,6 +108,23 @@ h4 {
   color: white; }
   .tabs a:hover {
     color: #666666; }
+
+.nav-tabs-small {
+  width: 100%;
+  top: 60px;
+  text-align: center;
+  display: none;
+  position: absolute;
+  background-color: #333333;
+  transition: max-height 0.9s linear; }
+  .nav-tabs-small li {
+    margin: 15px 0; }
+  .nav-tabs-small li a {
+    color: white;
+    margin: 10px 0; }
+
+.nav-show {
+  display: block; }
 
 /* MENU CATEGORIES */
 .nav-categories {
@@ -132,8 +153,8 @@ h4 {
 .subnav {
   padding: 5px 25px;
   list-style: none;
-  background-color: #999999;
-  margin: 0; }
+  display: none;
+  background-color: #999999; }
   .subnav li {
     padding: 10px 0; }
   .subnav li a {
@@ -151,15 +172,22 @@ h4 {
 
 .subnav-show {
   max-height: 500px;
+  display: block;
   transition: max-height 0.5s ease-in; }
 
+@media only screen and (min-width: 500px) {
+  .nav-tabs {
+    display: block; }
+
+  .nav-tabs-small {
+    display: none; } }
 /* FORM */
 .text-form {
   text-align: center;
   font-weight: 400; }
 
 .list-form {
-  width: 350px;
+  width: 300px;
   text-align: end;
   margin-top: 40px;
   margin-bottom: 40px; }
@@ -184,7 +212,7 @@ h4 {
 
 @media only screen and (min-width: 500px) {
   .list-form {
-    width: 300px;
+    width: 350px;
     margin-top: 0;
     margin-bottom: 20px; } }
 /* FOOTER */
@@ -224,6 +252,15 @@ h4 {
   .btn-dark:hover {
     background-color: #77756f; }
 
+.btn-menu {
+  display: flex;
+  width: 60px; }
+  .btn-menu img {
+    width: 100%; }
+
+@media only screen and (min-width: 500px) {
+  .btn-menu {
+    display: none; } }
 /* IMAGES */
 .logo {
   width: 18%;
@@ -244,11 +281,14 @@ h4 {
   background-color: #666666; }
 
 .img-medium {
-  width: 350px;
+  width: 300px;
   height: 200px;
   margin: 15px 0;
   background-color: #666666; }
 
+@media only screen and (min-width: 500px) {
+  .img-medium {
+    width: 350px; } }
 /* LAYOUTS PRODUCT */
 .catalogue {
   grid-area: catalogue;

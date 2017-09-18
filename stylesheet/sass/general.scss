@@ -24,12 +24,12 @@ body {
   background-color: $color-ligth;
   display: grid;
   grid-template-rows: 50px auto;
-  grid-template-columns: 15% auto;
+  grid-template-columns: 100%;
   grid-gap: 1em;
-  grid-template-areas: "header header"
-                        "content content"
-                        "catalogue catalogue"
-                        "footer footer"
+  grid-template-areas: "header"
+                        "content"
+                        "catalogue"
+                        "footer"
 }
 
 .row {
@@ -47,9 +47,12 @@ body {
 
 .header {
   width: 100%;
+  height: 60px;
   grid-area: header;
+  background-color: $color-dark;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .sidebar {
