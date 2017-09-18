@@ -15,3 +15,17 @@
     background-color: $color-secondary;
   }
 }
+
+.btn-menu {
+  display: flex;
+  width: 60px;
+  img {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 500px)  {
+  .btn-menu {
+    display: none;
+  }
+}

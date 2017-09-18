@@ -4,6 +4,7 @@
 .nav-tabs {
   width: 100%;
   height: 60px;
+  display: none;
   background-color: #333333;
   margin-bottom: 50px;
   ul {
@@ -23,6 +24,27 @@
   }
 }
 
+.nav-tabs-small {
+  width: 100%;
+  top: 60px;
+  text-align: center;
+  display: none;
+  position: absolute;
+  background-color: $color-dark;
+  transition: max-height 0.9s linear;
+  li {
+    margin: 15px 0;
+  }
+  li a {
+    color: $color-white;
+    margin: 10px 0;
+  }
+}
+
+.nav-show {
+  display: block;
+
+}
 /* MENU CATEGORIES */
 
 .nav-categories {
@@ -55,8 +77,8 @@
 .subnav {
   padding: 5px 25px;
   list-style: none;
+  display: none;
   background-color: $color-terciary;
-  margin: 0;
   li{
     padding: 10px 0;
   }
@@ -80,5 +102,16 @@
 
 .subnav-show {
   max-height: 500px;
+  display: block;
   transition: max-height 0.50s ease-in
+}
+
+@media only screen and (min-width: 500px)  {
+  .nav-tabs {
+    display: block;
+  }
+
+  .nav-tabs-small {
+    display: none;
+  }
 }
