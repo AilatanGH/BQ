@@ -155,6 +155,12 @@
         <img src="" class="img-small" alt="">
         <img src="" class="img-medium" alt="">
       </div>
+      <div class="box-code">
+        <strong>CSS:</strong>
+        <code>
+          <p>.img-xs<br/> .img-small <br/> .img-medium</p>
+        </code>
+      </div>
     </div>   <!-- End Imágenes-->
 
     <!-- Componentes -->
@@ -163,6 +169,7 @@
       <!-- Menú Naveganción -->
       <h3 class="title">Menú navegación</h3>
       <hr/>
+      <h4>Menú versión web</h4>
       <nav class="nav-tabs">
         <ul>
           <li class="tabs"><a href="#">item 1</a></li>
@@ -185,12 +192,41 @@
             &lt;/nav>
           </pre>
         </div>
+      </code>
+
+      <h4>Menú versión móvil</h4>
+      <header class="header-media">
+        <div class="logo">
+          <h2>Logo</h2>
+        </div>
+        <button class="btn-menu-media" id="btn-menu" type="button" name="button">
+          <img src="images/menu.png" alt="">
+        </button>
+      </header>
+      <code>
+        <div class="box-code">
+          <strong>HTML:</strong>
+          <pre>
+            &lt;button class="btn-menu" id="btn-menu" type="button" name="button">
+              &lt;img src="images/menu.png" alt="">
+            &lt;/button>
+
+            &lt;nav id="nav-tabs" class="nav-tabs-small">
+              &lt;ul>
+                &lt;li>&lt;a href="#">Item 1&lt;/a>&lt;/li>
+                &lt;li>&lt;a href="#">Item 2&lt;/a>&lt;/li>
+                &lt;li>&lt;a href="#">Item 3&lt;/a>&lt;/li>
+                &lt;li>&lt;a href="#">Item 4&lt;/a>&lt;/li>
+              &lt;/ul>
+            &lt;/nav>
+          </pre>
+        </div>
       </code><!-- End Menú navegación-->
 
       <!-- Menú Categorías -->
       <h3 class="title">Menú Categorías</h3>
       <hr/>
-      <div class="row">
+      <div class="space-around">
         <div class="box-categorie">
           <h3>Menú Activo</h3>
           <div class="nav-categories">
@@ -202,7 +238,7 @@
               </li>
               <li><a id="btn-subnav" class="nav-small-link" href="#">
                   item 2
-                  <img id="subnav-img" class="subnav-img" src="images/icon-expand.png" alt="Icono abrir">
+                  <img id="subnav-img" class="subnav-img subnav-img-rotate" src="images/icon-expand.png" alt="Icono abrir">
                 </a>
                   <ul id="subnav" class="subnav subnav-show">
                     <li><a href="">Item 1</a></li>

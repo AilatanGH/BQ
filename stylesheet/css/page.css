@@ -168,7 +168,7 @@ h4 {
 
 .subnav-img-rotate {
   transform: rotate(-180deg);
-  transition: 300ms linear all; }
+  transition: 200ms linear all; }
 
 .subnav-show {
   max-height: 500px;

@@ -42,6 +42,34 @@ h4 {
 .box-categorie {
   width: 15%;
 }
+
+.header-media {
+  width: 100%;
+  height: 60px;
+  grid-area: header;
+  background-color: #333333;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.btn-menu-media {
+  display: flex;
+  width: 60px;
+  border: 0;
+  background: transparent;
+}
+
+.btn-menu-media img {
+  width: 100%;
+}
+
+.space-around {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
 /* TIPOGRAPHY */
 
 .roboto {
