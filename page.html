@@ -95,14 +95,16 @@
         </div>
         <div class="row">
           <img class="img-medium" src="" alt="">
-          <form method="post">
+
+          <form name="form" action="page.html" method="post">
             <div class="list-form">
               <p class="text-form">Request Form</p>
-              <input class="input" type="text" placeholder="Name">
-              <input class="input" type="email" placeholder="email">
-              <button class="btn-dark">Send</button>
+              <input id="name" class="input" type="text" placeholder="Name" required>
+              <input id="mail" class="input" type="email" placeholder="email" required>
+              <button id="btn-send" class="btn-dark">Send</button>
             </div>
           </form>
+
         </div>
       </section><!-- End Content-->
 

@@ -24,3 +24,25 @@ function openCloseSubNavData(){
 }
 
 btnSubnav.addEventListener("click",openCloseSubNavData);
+
+// VALIDATE FORM
+
+var inputName = document.getElementById("name");
+var inputEmail = document.getElementById("mail");
+var btnSend = document.getElementById("btn-send");
+
+function validateForm () {
+  var name = inputName.value;
+  var email = inputEmail.value;
+  var emailTest = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+  if(name === "" || email === "" || !emailTest.test(email)) {
+      alert("Revise los campos");
+			return false;
+  } else {
+	 		alert("¡Gracias! su solicitud se ha enviado");
+	    form.reset();
+  }
+}
+
+btnSend.addEventListener("click", validateForm);
