@@ -224,6 +224,18 @@ h4 {
     font-size: 1.3em;
     font-weight: 200; }
 
+form input:valid {
+  border: 2px solid green;
+  background-color: white; }
+
+form input:focus:invalid {
+  border: 2px solid red;
+  background-color: white; }
+
+.text-form {
+  font-size: 1.33em;
+  text-align: center; }
+
 @media only screen and (min-width: 500px) {
   .list-form {
     width: 350px;

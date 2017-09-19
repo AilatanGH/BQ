@@ -30,6 +30,7 @@ btnSubnav.addEventListener("click",openCloseSubNavData);
 var inputName = document.getElementById("name");
 var inputEmail = document.getElementById("mail");
 var btnSend = document.getElementById("btn-send");
+var textSend = document.getElementById("text-send");
 
 function validateForm () {
   var name = inputName.value;
@@ -37,11 +38,11 @@ function validateForm () {
   var emailTest = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
   if(name === "" || email === "" || !emailTest.test(email)) {
-      alert("Revise los campos");
+      textSend.innerHTML = "Revise los campos";
 			return false;
   } else {
-	 		alert("¡Gracias! su solicitud se ha enviado");
-	    form.reset();
+	 		textSend.innerHTML ="¡Gracias! su solicitud <br> se ha enviado correctamente";
+			form.reset();
   }
 }
 
