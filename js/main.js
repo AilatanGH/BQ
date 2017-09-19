@@ -41,9 +41,12 @@ function validateForm () {
       textSend.innerHTML = "Revise los campos";
 			return false;
   } else {
-	 		textSend.innerHTML ="¡Gracias! su solicitud <br> se ha enviado correctamente";
-			form.reset();
+		textSend.innerHTML = "¡Gracias! su solicitud se ha<br>enviado correctamente";
+		form.reset()
   }
+		window.setTimeout(function() {
+			textSend.innerHTML = "";
+		}, 3000);
 }
 
 btnSend.addEventListener("click", validateForm);
