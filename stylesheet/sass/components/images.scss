@@ -1,7 +1,7 @@
 /* IMAGES */
 
 .logo {
-  width: 18%;
+  width: 25%;
   height: 60px;
   background-color: $color-white;
   text-align: center;
@@ -31,5 +31,17 @@
 @media only screen and (min-width: 500px)  {
   .img-medium {
     width: 350px;
+  }
+
+  .logo {
+    width: 30%;
+  }
+}
+
+@media only screen and (min-width: 868px)  {
+
+  .logo {
+    width: 18%;
+
   }
 }

@@ -64,15 +64,16 @@ body {
   padding: 0 20px;
 }
 
-@media only screen and (min-width: 500px)  {
+@media only screen and (min-width: 500px) {
 
   .container {
-    grid-template-rows: 60px 40% 30%;
-    grid-template-columns: 15% 26% 58%;
+    grid-template-rows: 60px auto;
+    grid-template-columns: 25% auto;
     grid-gap: 1em;
-    grid-template-areas: "header header header"
-                          "sidebar catalogue content"
-                          "footer footer footer"
+    grid-template-areas: " header header"
+                          "sidebar catalogue"
+                          "sidebar content"
+                          "footer footer"
   }
 
   .content {
@@ -83,7 +84,34 @@ body {
   .sidebar {
     display: inline;
     grid-area: sidebar;
-    padding: 0 20px;
+    padding: 0 10px;
+  }
+}
+
+@media only screen and (min-width: 868px)  {
+
+  .container {
+    grid-template-rows: 60px 40% 30%;
+    grid-template-columns: 15% 40% 45%;
+    grid-gap: 0.5em;
+    grid-template-areas: "header header header"
+                          "sidebar catalogue content"
+                          "footer footer footer"
+  }
+
+  .sidebar {
+    padding: 0 15px;
+  }
+}
+
+@media only screen and (min-width: 1200px)  {
+
+  .container {
+    grid-template-rows: 60px 40% 30%;
+    grid-template-columns: 15% 26% 58%;
+    grid-template-areas: "header header header"
+                          "sidebar catalogue content"
+                          "footer footer footer"
   }
 
   .row {
